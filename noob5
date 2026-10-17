@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    int a;
+    long long b;
+    float c;
+    char d;
+    char e[100];
+    scanf("%d\n",&a);
+    scanf("%lld\n",&b);
+    scanf("%f\n",&c);
+    scanf("%c\n",&d);
+    scanf("%s\n",&e);
+    printf("%d\n",a);
+    printf("%lld\n",b);
+    if (c<0) {
+        printf("%.1f\n",-c);
+    }else {
+    printf("%.1f\n",c);
+    }
+    printf("%c\n",d);
+    printf("%s",e);
+    return 0;
+}
