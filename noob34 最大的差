@@ -1,0 +1,44 @@
+#include <stdio.h>
+int read()
+{
+    int x=0;
+    int f=1;
+    int c=getchar();
+    while (c>'9'||c<'0')
+    {
+        if(c=='-')
+        {
+            f=-1;
+        }
+        c=getchar();
+    }
+    while(c>='0'&&c<='9')
+    {
+        x=10*x+(c-'0');
+        c=getchar();
+    }
+    return x*f;
+}
+int main() {
+    int n=0;
+    n=read();
+    int maxval,minval;
+    int first=read();
+    maxval=first;
+    minval=first;
+    for (int i=1;i<n;i++)
+    {
+        int num=0;
+        num=read();
+        if (num>maxval)
+        {
+            maxval=num;
+        }
+        if (num<minval)
+        {
+            minval=num;
+        }
+    }
+    printf("%d",maxval-minval);
+    return 0;
+}
