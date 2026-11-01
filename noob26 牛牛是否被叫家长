@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+   int A,B,C;
+    scanf("%d %d %d",&A,&B,&C);
+ 
+    float average = (A + B + C) / 3;
+    if(average < 60)
+    printf("YES\n");
+    else
+     printf("NO\n");
+}
